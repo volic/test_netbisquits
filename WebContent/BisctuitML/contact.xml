@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<page xmlns:nb="http://www.emoveo.de/netbiscuits" title="Contact"> 
+   <styles>
+		    <style name="link-color" value="#D90000"/>
+   </styles>
+
+   <container>
+	     <column>
+		       <IMAGEHEADER fillcolor="D90000" boxing="3">
+            <styles>
+				           <style name="bgcolor" value="#D90000"/>
+			         </styles>
+            <img src="./res/generic-header-image.jpg" href="home.xml" alt="home"/>
+         </IMAGEHEADER>
+		       <BUTTONMENU>
+            <styles>
+               <style name="bgcolor" value="#d90000"/>
+               <style name="active-color" value="#cccccc"/>
+               <style name="active-bgcolor" value="#d90000"/>
+               <style name="inactive-color" value="#FFFFFF"/>
+               <style name="inactive-bgcolor" value="#d90000"/>
+   		       </styles>
+            <items>
+	  			         <item active="true">
+	  				           <link href="home.xml">home</link>
+	  			         </item>
+	  			         <item>
+	  				           <link href="video.xml">video</link>
+	  			         </item>
+	  			         <item>
+	  				           <link href="audio.xml">audio</link>
+	  			         </item>
+	  			         <item>
+	  				           <link href="image.xml">image</link>
+	  			         </item>
+			         </items>
+         </BUTTONMENU>
+		       <SEPARATOR>
+            <hr/>
+         </SEPARATOR>
+	     </column>
+   </container>
+
+   <container>
+	     <column>
+		       <TEXT>
+            <headline>Contact me[br][br]</headline>
+            <richtext>Make a call to action. Ask you user to fill in the form below.[br][br]
+			</richtext>
+         </TEXT>
+	     </column>
+   </container>
+
+   <container>
+	     <form action="mailto" method="get">
+         <row>
+			         <cell align="left">
+				           <text>[b]Name:[/b]</text>
+			         </cell>
+		       </row>
+         <row>
+			         <cell align="left">
+				           <input type="text" name="name" maxlength="25" size="30" align="left"/>
+			         </cell>
+		       </row>
+         <row>
+			         <cell align="left">
+				           <text>[b]Email:[/b]</text>
+			         </cell>
+		       </row>
+         <row>
+			         <cell align="left">
+				           <input type="text" name="email" maxlength="25" size="30" align="left"/>
+			         </cell>
+		       </row>
+         <row>
+			         <cell align="left">
+				           <text>[b]Message:[/b]</text>
+			         </cell>
+		       </row>
+         <row>
+			         <cell align="left">
+				           <input type="textarea" name="message" rows="2" maxlength="25" size="30" align="left"/>
+			         </cell>
+		       </row>
+         <row>
+			         <cell align="left">
+				           <input type="hidden" name="successPage"
+                      value="sent.xml"/>
+			         </cell>
+			         <cell align="right">
+				           <input type="hidden" name="errorPage"
+                      value="notsent.xml"/>
+			         </cell>
+		       </row>
+         <row>
+			         <cell align="left">
+				           <input type="hidden" name="recipient" value="sp@dynetic.de"/>
+			         </cell>
+		       </row>
+         <row>
+			         <cell align="left">
+				           <input type="submit" value="... send" align="left"/>
+			         </cell>
+		       </row>
+      </form>
+   </container>
+
+   <container>
+	     <column>
+		       <SEPARATOR/>
+	     </column>
+   </container>
+
+   <container>
+	 	   <LIST cols="1">
+         <styles>
+				        <style name="color" value="#D90000"/>
+			      </styles>
+         <items>
+  			       <item href="home.xml">
+  				         <img src="res/arrow-left.gif" alt="*"/>
+  				         <text>back</text>
+  			       </item>
+			      </items>
+      </LIST>
+   </container>
+
+   <container>
+	     <column>
+		       <SEPARATOR>
+            <hr/>
+         </SEPARATOR>
+	     </column>
+   </container>
+
+   <container>
+	     <column>
+		       <PAGEFOOTER>
+            <styles>
+				           <style name="color" value="#FFFFFF"/>
+				           <style name="link-color" value="#FFFFFF"/>
+				           <style name="bgcolor" value="#db001b"/>
+			         </styles>
+            <item position="1">
+			            <richtext>[b]home[/b]</richtext>
+				           <link href="home.xml"/>
+			         </item>
+            <item position="2">
+			            <richtext>     </richtext>
+			         </item>
+            <item position="3">
+			            <richtext>[b]contact[/b]</richtext>
+ 				          <link href="contact.xml"/>
+			         </item>
+            <item position="4">
+			            <text> |</text>
+			         </item>
+            <item position="5">
+			            <richtext>[b]imprint[/b]</richtext>
+ 				          <link href="imprint.xml"/>
+			         </item>
+         </PAGEFOOTER>
+	     </column>
+   </container>
+
+</page>

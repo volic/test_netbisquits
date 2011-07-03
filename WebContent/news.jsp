@@ -34,7 +34,7 @@
 	  				<link href="home.jsp">home</link>
 	  			</item>
 	  			<item>
-	  				<link href="home.jsp">company</link>
+	  				<link href="media.jsp">media</link>
 	  			</item>
 	  			<item>
 	  				<link href="home.jsp">products</link>

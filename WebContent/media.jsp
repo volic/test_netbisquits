@@ -1,5 +1,6 @@
-<%@ page contentType="text/xml; charset=ISO-8859-1" %><?xml version="1.0" encoding="ISO-8859-1"?>
-<page xmlns:nb="http://www.emoveo.de/netbiscuits" title="Netbiscuits"> 
+<%@ page contentType="text/xml; charset=ISO-8859-1" %>
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<page xmlns:nb="http://www.emoveo.de/netbiscuits" title="Media"> 
 
 <container>
 	<column>
@@ -53,49 +54,45 @@
 		</biscuit>
 	</column>
 </container>
-
 <container>
 	<column>
 		<biscuit type="TEXT">
-			<headline>Your Company</headline>
-			<text>Netbiscuits is the first web-based standard software for global, mobile content adaptation, to self-enable, adapt and deliver any content for all mobile channels, to exchange with mobile experts and market ads applications online in form of a community platform.
-			</text>
-		</biscuit>
-	</column>
-</container>
-
-<container>
-	<column>
-		<biscuit type="TEXT">
-			<styles>
-    	   		<style name="color" value="#db001b"/>
-      		</styles>
-		
-			<richtext>[br][br][b][url="contact.jsp"]... more[/url][/b][br][br]</richtext>
-		</biscuit>
-	</column>
-</container>
-
-<container>
-	<column>
-		<biscuit type="SEPARATOR">
-			<hr/>
-		</biscuit>
-	</column>
-</container>
-
-<container>
-	<column>
-		<biscuit type="TEASER">
-			<styles>
-			</styles>
-			<headline>News</headline>
-			<richtext align="left">[br]Developer Program &amp; Community Support launch in sept.07[br][br][b][color="#db001b"][url="news.jsp"]... more[/url][/color][/b][br][br]
+			<headline>Netbiscuits.com[br][br]</headline>
+			<richtext>powered by [br]dynetic solutions gmbh[br]Luxemburgerstr. 2[br]67659 Kaiserslautern [br][br]
 			</richtext>
-			<img src="./res/biscuits/Frame1.png" alt="myImage"/>
 		</biscuit>
 	</column>
 </container>
+<container>
+	<column>
+	<biscuit type="MEDIA" id="708936499">
+			<settings>
+    <showimage>true</showimage>
+    <convertimage>false</convertimage>
+    <showstream>true</showstream>
+    <showteaser>true</showteaser>
+    <showdownload>true</showdownload>
+    <showtitle>true</showtitle>
+    <redirect>fallbackonly</redirect>
+    <poster src="poster.jpg" text="poster"/>
+  </settings>
+			<headline>Simpsons</headline>
+			<mediaitem id="./res/feeee1c897a0310911ab8baf0d613a14-1207856516.flv"/>
+			<links>
+    			<link text="File: [b]http://media.netbiscuits.com/media01/nbmmc/1039269/out/708936517/mp3/mp3/44100/128/2/0813987f7df81.mp3[/b]"/>
+  			</links>
+			
+	</biscuit>		
+	</column>
+</container>
+
+<container>
+	<column> 
+		<biscuit type="SEPARATOR">
+		</biscuit>
+	</column>
+</container>
+
 
 <container>
 	<column>
