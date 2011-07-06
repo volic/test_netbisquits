@@ -1,10 +1,11 @@
+<%@page contentType="text/xml; charset=ISO-8859-1" %>
 <%@page import="java.util.ArrayList"%>
 <%@page import="com.epam.triimob.netbiscuits.xml.Show"%>
 <%@page import="java.util.List"%>
 <%@page import="com.epam.triimob.netbiscuits.request.TokenRequest"%>
 <%@page import="com.epam.triimob.netbiscuits.utils.TemplateUtils"%>
 <%@page import="com.epam.triimob.netbiscuits.xml.Authentication"%>
-<%@page contentType="text/xml; charset=ISO-8859-1" %>
+
 <%
 	TokenRequest tokenRequest = (TokenRequest) session
 			.getAttribute("tokenRequest");
@@ -62,7 +63,7 @@
 		  			%>
 				     <item>
 					       <img src="<%=clip.getThumbUrl()%>" alt=""/>
-					       <text href="demo/link.jsp">
+					       <text href="clipDetails.jsp?id=<%=clip.getId()%>">
 					         <%=clip.getName()%>
 					       </text>
 				     </item>

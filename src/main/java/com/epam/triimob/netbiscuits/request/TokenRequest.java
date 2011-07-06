@@ -7,6 +7,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.xml.bind.JAXBContext;
@@ -30,7 +31,13 @@ public class TokenRequest {
 	}
 
 	public List<Show> getClips() {
-		return searchResponse.getData().getClips().getClip();
+		List<Show> clips = new ArrayList<Show>();
+		try {
+			clips = searchResponse.getData().getClips().getClip();
+		} catch (NullPointerException e) {
+
+		}
+		return clips;
 	}
 
 	private Response authentificationResponse;
