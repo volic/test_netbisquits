@@ -3,6 +3,7 @@
     <wb-module deploy-name="test_netbisquits">
         <wb-resource deploy-path="/" source-path="/WebContent"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <property name="context-root" value="test_netbisquits"/>
         <property name="java-output-path" value="/test_netbisquits/build/classes"/>
     </wb-module>

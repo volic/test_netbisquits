@@ -2,50 +2,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <page xmlns:nb="http://www.emoveo.de/netbiscuits" title="Media"> 
 
-<container>
-	<column>
-		<biscuit type="IMAGEHEADER" height="35" fillcolor="FFFFFF" boxing="3">
-			<img src="./res/imageset/biscuitlogo/biscuitlogo300.jpg" href="home.jsp" alt="home"/> 			
-			<imagesetx>
-				<img src="./res/imageset/biscuitlogo/biscuitlogo100.jpg" href="home.jsp" alt="home" width="100"/> 			
-				<img src="./res/imageset/biscuitlogo/biscuitlogo140.jpg" href="home.jsp" alt="home" width="140"/> 			
-				<img src="./res/imageset/biscuitlogo/biscuitlogo200.jpg" href="home.jsp" alt="home" width="200"/> 			
-				<img src="./res/imageset/biscuitlogo/biscuitlogo240.jpg" href="home.jsp" alt="home" width="240"/> 			
-				<img src="./res/imageset/biscuitlogo/biscuitlogo300.jpg" href="home.jsp" alt="home" width="300"/> 			
-				<img src="./res/imageset/biscuitlogo/biscuitlogo400.jpg" href="home.jsp" alt="home" width="400"/> 			
-			</imagesetx>
-		</biscuit>
-	</column>
-</container>
-
-<container>
-	<column>
-		<biscuit type="BUTTONMENU">
-			<styles>
-	       		<style name="bgcolor" value="#db001b"/>
-    	   		<style name="active-color" value="#979a9b"/>
-    	   		<style name="active-bgcolor" value="#db001b"/>
-     	   		<style name="inactive-color" value="#FFFFFF"/>
-    	   		<style name="inactive-bgcolor" value="#db001b"/>
-      		</styles>
-			
-			<items>
-	  			<item active="true">
-	  				<link href="home.jsp">home</link>
-	  			</item>
-	  			<item>
-	  				<link href="media.jsp">media</link>
-	  			</item>
-	  			<item>
-	  				<link href="home.jsp">products</link>
-	  			</item>
-	  			<item>
-	  				<link href="home.jsp">services</link>
-	  			</item>
-			</items>	
-		</biscuit>
-	</column>
-</container>
+<jsp:include page="header.jsp" />
 
 <container>
 	<column>
@@ -66,33 +23,70 @@
 <container>
 	<column>
 	<biscuit type="MEDIA" id="708936499">
-			<settings>
-    <showimage>true</showimage>
-    <convertimage>false</convertimage>
-    <showstream>true</showstream>
-    <showteaser>true</showteaser>
-    <showdownload>true</showdownload>
-    <showtitle>true</showtitle>
-    <redirect>fallbackonly</redirect>
-    <poster src="poster.jpg" text="poster"/>
-  </settings>
+		<settings>
+		    <showimage>true</showimage>
+		    <convertimage>false</convertimage>
+		    <showstream>true</showstream>
+		    <showteaser>true</showteaser>
+		    <showdownload>true</showdownload>
+		    <showtitle>true</showtitle>
+		    <redirect>fallbackonly</redirect>
+		    <poster src="res/Untitled picture.png" text="poster"/>
+	  	</settings>
 			<headline>Simpsons</headline>
-			<mediaitem id="./res/feeee1c897a0310911ab8baf0d613a14-1207856516.flv"/>
-			<links>
-    			<link text="File: [b]http://media.netbiscuits.com/media01/nbmmc/1039269/out/708936517/mp3/mp3/44100/128/2/0813987f7df81.mp3[/b]"/>
-  			</links>
-			
+			<mediaitem id="708936499"/>
 	</biscuit>		
 	</column>
 </container>
-
 <container>
 	<column> 
 		<biscuit type="SEPARATOR">
 		</biscuit>
 	</column>
 </container>
-
+<container>
+	<column>
+	<SHOWFILE borders="top">
+	   <styles>
+	      <style name="text-align" value="center"/>
+	      <style name="header-align" value="center"/>
+	      <style name="bgcolor" value="#dddddd"/>
+	      <style name="bgcolor3" value="#ffffff"/>
+	      <style name="border-color" value="#aaaaaa"/>
+	      <style name="header-bgcolor" value="#800000"/>
+	      <style name="header-color" value="#FFFFFF"/>
+	      <style name="link-color" value="#D90000"/>
+	   </styles>
+	   <settings>
+		<showdownload>true</showdownload>
+		<showstream>true</showstream>
+	   </settings>
+	   <headline>Showfile Demo</headline>
+	   <richtext>[i]Free static text[/i] here (optional)</richtext>
+	   <mediaitem id="708936499" errormsg="[b]No files found![/b] 
+	       Your handset may not support this type of media."/>
+	</SHOWFILE> 
+	</column>
+</container>
+<container>
+	<column> 
+		<biscuit type="SEPARATOR">
+		</biscuit>
+	</column>
+</container>
+<container>
+	<column> 
+		<biscuit type="FLASH">
+		<headline>Flash Prototype</headline>
+		<flashset>
+			<flash src="res/flash/flyingsnail1.swf" />
+		</flashset>
+		<noflash>
+	     	<richtext class="error">Flash not supported.</richtext>
+	    </noflash>
+		</biscuit>
+	</column>
+</container>
 
 <container>
 	<column>
